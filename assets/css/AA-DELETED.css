@@ -12027,24 +12027,6 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.025)
 }
 
-.resume-section-heading {
-  position: relative;
-  padding-left: 1rem;
-  font-size: 1.125rem;
-  letter-spacing: 0.15rem;
-  color: #54B689
-}
-
-.resume-section-heading:before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 100%;
-  background: #54B689;
-  position: absolute;
-  left: 0;
-  top: 0
-}
 
 .resume-name {
   font-size: 2.75rem;
@@ -12091,17 +12073,7 @@ a.resume-link:hover {
   font-size: 0.875rem
 }
 
-.resume-aside {
-  border-left: 1px solid rgba(0, 0, 0, 0.08)
-}
 
-.resume-aside .item {
-  font-size: 0.875rem
-}
-
-.resume-aside .item-title {
-  font-size: 1rem
-}
 
 .resume-education-list,
 .resume-awards-list {
@@ -12335,10 +12307,6 @@ a.resume-link:hover {
 
   .main-wrapper {
     margin-left: 0
-  }
-
-  .resume-aside {
-    border-left: 0
   }
 }
 

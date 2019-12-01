@@ -1,0 +1,45 @@
+/*
+* HEAEDER
+*/
+/*
+* PAGES
+*/
+/*
+* SECTION
+*/
+.resume-section-heading {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.15rem;
+  color: #54B689; }
+
+.resume-section-heading:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #54B689;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.resume-aside {
+  border-left: 1px solid rgba(0, 0, 0, 0.08); }
+
+.resume-aside .item {
+  font-size: 0.875rem; }
+
+.resume-aside .item-title {
+  font-size: 1rem; }
+
+.resume-aside .item {
+  font-size: 0.875rem; }
+
+@media (max-width: 991.98px) {
+  .resume-aside {
+    border-left: 0; } }
+
+/*
+* FOOTer
+*/

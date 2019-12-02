@@ -1,1 +1,87 @@
+// PROFILE IMAGE
+// .profile-section .profile-image:hover {
+//   transition: transform 0.3s ease-in-out 0.2s;
+//   transform: skew(10deg, 10deg);
+// }
+
+.profile-section:hover {
+  .profile-image {
+    transition: transform 0.3s ease-in-out 0.2s;
+    transform: skew(10deg, 10deg);
+  }
+}
+
+.header .blog-name a {
+  // color: #000;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  // animation: color-change 1s linear infinite
+}
+
+.header .blog-name a:hover {
+  // color: #000;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  animation: color-change 1s linear infinite;
+}
+
+a:hover {
+  animation: color-change 1s linear infinite;
+}
+
+// @keyframes color-change {
+//   0% {
+//     // color: blue;
+//     transform: rotate(45);
+//     text-shadow: 0px 0px 15px green;
+//   }
+
+//   50% {
+//     // color: red;
+//     transform: rotate3d(45deg);
+//     text-shadow: 0px 0px 0px red;
+//   }
+
+//   100% {
+//     // color: green;
+//     transform: rotate3d(0deg);
+//     text-shadow: 0px 0px 15px blue;
+//   }
+// }
+// @keyframes color-change {
+//   0% {
+//     // color: blue;
+//     transform: rotate(45);
+//     text-shadow: 0px 0px 15px #fff;
+//   }
+
+//   50% {
+//     // color: red;
+//     transform: rotate3d(45deg);
+//     text-shadow: 0px 0px 0px #fff;
+//   }
+
+//   100% {
+//     // color: green;
+//     transform: rotate3d(0deg);
+//     text-shadow: 0px 0px 15px #fff;
+//   }
+// }
+
 // .resume-section-heading {}
+
+.testimonial-carousel .item {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-carousel blockquote {
+  font-size: 14px;
+}
+
+
+form textarea {
+  min-height: 100px;
+}

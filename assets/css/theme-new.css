@@ -7,39 +7,67 @@
 /*
 * SECTION
 */
-.resume-section-heading {
-  position: relative;
-  padding-left: 1rem;
-  font-size: 1.125rem;
-  letter-spacing: 0.15rem;
-  color: #54B689; }
-
-.resume-section-heading:before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 100%;
-  background: #54B689;
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-.resume-aside {
-  border-left: 1px solid rgba(0, 0, 0, 0.08); }
-
-.resume-aside .item {
+.cert-section .resume-cert-list li.item {
   font-size: 0.875rem; }
-
-.resume-aside .item-title {
-  font-size: 1rem; }
-
-.resume-aside .item {
-  font-size: 0.875rem; }
-
-@media (max-width: 991.98px) {
-  .resume-aside {
-    border-left: 0; } }
+  .cert-section .resume-cert-list li.item .item-title {
+    opacity: 0.7;
+    display: block;
+    font-size: 0.875rem;
+    overflow: hidden;
+    overflow-wrap: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .cert-section .resume-cert-list li.item .source {
+    color: red; }
 
 /*
 * FOOTer
 */
+.profile-section:hover .profile-image {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out 0.2s;
+  transition: -webkit-transform 0.3s ease-in-out 0.2s;
+  -o-transition: transform 0.3s ease-in-out 0.2s;
+  transition: transform 0.3s ease-in-out 0.2s;
+  transition: transform 0.3s ease-in-out 0.2s, -webkit-transform 0.3s ease-in-out 0.2s;
+  -webkit-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  transform: skew(10deg, 10deg); }
+
+.header .blog-name a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2); }
+
+.header .blog-name a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-animation: color-change 1s linear infinite;
+  animation: color-change 1s linear infinite; }
+
+a:hover {
+  -webkit-animation: color-change 1s linear infinite;
+  animation: color-change 1s linear infinite; }
+
+.testimonial-carousel .item {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.testimonial-carousel blockquote {
+  font-size: 14px; }
+
+form textarea {
+  min-height: 100px; }

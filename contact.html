@@ -19,9 +19,9 @@
 		<!-- Owl Stylesheets -->
 		<link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css">
 		<!-- Theme CSS -->
-		<link id="theme-style" rel="stylesheet" href="./assets/css/theme-3.css">
+		<link id="theme-style" rel="stylesheet" href="./assets/css/theme-8.css">
 		<link rel="stylesheet" href="./assets/css/theme-new.css">
-
+		<link rel="stylesheet" href="./assets/css/pageclip.css" media="screen">
 	</head>
 
 	<body>
@@ -41,7 +41,7 @@
 						<div class="profile-section pt-3 pt-lg-0">
 							<img class="profile-image mb-3 rounded-circle mx-auto" src="./assets/images/profile.png" alt="image">
 
-							<div class="bio mb-3">Hi, my name is Muhammad Ayoub and I'm a Javascript Engineer. Welcome to my personal
+							<div class="bio mb-3">Hi, I'm Muhammad Ayoub and I'm a Javascript Engineer. Welcome to my personal
 								website!</div>
 							<!--//bio-->
 							<ul class="social-list list-inline py-2 mx-auto">
@@ -81,16 +81,6 @@
 							<li class="nav-item active">
 								<a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw mr-2"></i>Contact<span
 										class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
-									<i class="fas fa-cogs fa-fw mr-2"></i>More Pages
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="blog-home.html">Blog</a>
-									<a class="dropdown-item" href="blog-post.html">Blog Post</a>
-								</div>
 							</li>
 						</ul>
 
@@ -154,7 +144,38 @@
 			</section>
 			<section class="contact-section px-3 py-5 p-md-5">
 				<div class="container">
-					<form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="#" name="contact_form" data-netlify="true" netlify>
+					<form action="https://send.pageclip.co/gHOqbUdqFgD8vd7VYRTdwan2S6haupfC/contact_form" class="pageclip-form"
+						method="post"></form>
+					<!-- text field -->
+					<input type="email" name="email" value="bob@omg.com" />
+
+					<select name="heardFrom">
+						<option value="ph" selected>Product Hunt</option>
+						<option value="hn">Hacker News</option>
+					</select>
+
+					<!-- radio buttons -->
+					<input type="radio" name="animal" value="tarantula" id="tarantula" checked />
+					<label htmlFor="tarantula">Tarantula</label>
+
+					<input type="radio" name="animal" value="turtle" id="turtle" />
+					<label htmlFor="turtle">Turtle</label>
+
+					<!-- checkboxes -->
+					<input type="checkbox" name="likes[pizza]" id="pizza" checked />
+					<label htmlFor="pizza">Pizza 🍕</label>
+
+					<input type="checkbox" name="likes[yams]" id="yams" />
+					<label htmlFor="yams">Sweet Potatos 🍠</label>
+
+					<!-- hidden inputs -->
+					<input type="hidden" name="version" value="v1" />
+					<button class="pageclip-form__submit" type="button">
+						<span>Submit</span>
+					</button>
+					</form>
+					<form class="contact-form col-lg-8 mx-lg-auto" method="post" action="#" name="contact_form"
+						data-netlify="true" netlify>
 						<h3 class="text-center mb-3">Get In Touch</h3>
 						<div class="form-row">
 							<div class="form-group col-md-6">
@@ -203,6 +224,10 @@
 				<!--//container-->
 			</section>
 
+			<div id="demo"></div>
+			<!--//profiles-section-->
+
+
 			<footer class="footer text-center py-4">
 				<small class="copyright">&copy; Copyright 2019. Designed by <a
 						href="https://stackoverflow.com/users/9207553/mohammad-ayoub-khan">Muhammad Ayoub</a> </small>
@@ -215,8 +240,8 @@
 		<!-- Javascript -->
 		<script defer src="./assets/fontawesome/js/all.js"></script>
 		<script src="./assets/plugins/jquery-3.4.1.min.js"></script>
-		<script src="./assets/plugins/popper.min.js"></script>
-		<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/pageclip.js" charset="utf-8"></script>
 
 		<!--Page Specific JS -->
 		<script type="text/javascript" src="./assets/plugins/jquery-validation/jquery.validate.min.js"></script>
@@ -227,6 +252,12 @@
 		<!-- Dark Mode -->
 		<script src="./assets/plugins/js-cookie.min.js"></script>
 		<script src="./assets/js/dark-mode.js"></script>
+
+		<script>
+			$(function () {
+				$("#demo").load("imports/profiles.html");
+			});
+		</script>
 	</body>
 
 </html>

@@ -1,13 +1,7 @@
 // PROFILE IMAGE
-// .profile-section .profile-image:hover {
-//   transition: transform 0.3s ease-in-out 0.2s;
-//   transform: skew(10deg, 10deg);
-// }
-
 .profile-section:hover {
   .profile-image {
-    transition: transform 0.3s ease-in-out 0.2s;
-    transform: skew(10deg, 10deg);
+    background: red;
   }
 }
 
@@ -84,4 +78,11 @@ a:hover {
 
 form textarea {
   min-height: 100px;
+}
+
+// DARK MODE SETTINGS
+.dark-mode {
+  .list-group-item {
+    background: #151e29;
+  }
 }

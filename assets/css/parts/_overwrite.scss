@@ -1,7 +1,7 @@
 // PROFILE IMAGE
-.profile-section:hover {
+.profile-section {
   .profile-image {
-    background: red;
+    filter: drop-shadow(2px 2px #444);
   }
 }
 
@@ -86,4 +86,3 @@ form textarea {
     background: #151e29;
   }
 }
-
